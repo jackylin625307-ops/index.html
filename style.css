@@ -1,0 +1,99 @@
+#hero-section{
+    background-image: url(queenstown-late-night.jpg);
+}
+body {
+    font-family: "Sour+Gummy", sans-serif;
+}
+#page_container {
+    width: 1700px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 48px 16px rgba(0, 0, 0, 0.175);
+}
+header {
+    background-color: #ffffff;
+    padding-bottom: 150px;
+}
+#logo {
+    width: 200px;
+    float: left;
+    padding: 15px 0 20px 40px;
+}
+#logo img {
+    width: 110px;
+}
+#page_title {
+    width: 1000px;
+    float: left;
+    text-align: center;
+    padding-left: 120px;
+    padding-top: 25px;
+}
+nav {
+    clear: both;
+    text-align: center;
+}
+nav ul {  /*Styles ther ul in the nav */
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(235, 191, 97);
+}
+nav li {
+    display: inline-block;
+}
+nav li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 30px;
+    font-size: 25px;
+    color: #ffffff;
+}
+nav li a:hover {
+    background-color: rgb(137, 174, 226);
+}
+
+#intro_block {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#intro_text {
+    text-align: justify;
+    width: 700px;
+    flex-grow: 3;
+    padding: 30px 25px 0 25px;
+}
+
+#intro_text p {
+    font-size: larger;
+}
+
+#intro_img {
+    width: 700px;
+    flex-grow: 1;
+}
+
+#intro_img img {
+    width: 700px;
+}
+footer {
+    background-color: #2ea6ca;  
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .footer-logo {
+    width: 40px;
+    height: auto;
+  }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Olympics — Featured Sports</title>
+    <link rel="stylesheet" href="olympics.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" />
+
+</head>
+<body>
+
+    <div class="page_container">
+
+        <!-- ================================================================
+            HEADER — uses <header>, <nav>, and <ul> semantic elements
+        ================================================================ -->
+        <header>
+            <div class="logo">
+                <div class="rings">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <h1>Winter Olympics</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Athletes</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ================================================================
+            MAIN CONTENT
+        ================================================================ -->
+        <main>
+
+            <!-- ──── Hero Banner ──── -->
+            <section class="hero">
+                <h2>Celebrate the <span>Winter Games</span></h2>
+                <p>From the thrill of the downhill to the grace of figure skating, explore the sports that make the Winter Olympics one of the greatest sporting events on earth.</p>
+            </section>
+
+            <!-- ──── Intro / About ──── -->
+            <section class="intro">
+                <article>
+                    <h3>A Legacy of Ice & Snow</h3>
+                    <p>The Winter Olympic Games have been held every four years since 1924, bringing together the world's finest athletes to compete across snow and ice disciplines. From the first Games in Chamonix, France, the event has grown to include 15 sports and over 100 medal events.</p>
+                </article>
+                <article>
+                    <h3>Your Task</h3>
+                    <p>Choose your favourite Winter Olympic sports and build a card gallery below using Fancybox. Each card should feature an image of the sport, its name, category tags, and key facts. Click any image to browse the full gallery in the Fancybox lightbox.</p>
+                </article>
+            </section>
+
+        
+            <section class="sports-section">
+                <div class id="card">
+                <a href="winter.webp" data-fancybox="gallery"data-caption="Winter olympics">
+                     <img src="winter.webp">
+                         <p>Speed skating is a competitive form of ice skating in which the competitors race each other in travelling a certain distance on skates. 
+                            Types of speed skating are long-track speed skating, short-track speed skating, and marathon speed skating. In the Olympic Games, long-track speed skating is usually referred to as just "speed skating", while short-track speed skating is known as "short track". The International Skating Union, 
+                            the governing body of competitive ice sports, refers to long track as "speed skating" and short track as "short track skating".
+                             Long track speed skating takes place on a 400m ice track, while short track takes place on a 111m track.</p>
+                   </div>  
+                <div class id="card">           
+                 <a href="winter02.webp" data-fancybox="gallery"data-caption="Winter olympics">
+                      <img src="winter02.webp">
+                          <p>Curling is a sport in which players slide stones on a sheet of ice towards a target area that is segmented into four concentric circles.
+                             It is related to bowls, boules, and shuffleboard. Two teams, each with four players, take turns sliding heavy, polished granite stones, also called rocks, across the ice curling sheet towards the house,
+                              a circular target marked on the ice.Each team has eight stones, with each player throwing two.
+                             The goal is to accumulate the highest score for a game; points are scored for the stones resting closest to the centre of the house at the conclusion of each end, 
+                             which is completed when both teams have thrown all of their stones once. A game usually consists of eight or ten ends.</p>
+                    </div>
+                <div class id="card">
+                 <a href="winter03.webp" data-fancybox="gallery"data-caption="Winter olympics">
+                     <img src="winter03.webp">
+                         <p>Short-track speed skating is a form of competitive ice speed skating.
+                             In competitions, multiple skaters (typically between four and six) skate on an oval ice track with a length of 111.12 metres (364.57 ft). 
+                             The rink itself is 60 metres (196.85 ft) long by 30 metres (98.43 ft) wide, which is the same size as an Olympic-sized figure skating rink and an international-sized ice hockey rink.
+                             Related sports include long-track speed skating and inline speed skating.</p>
+                </div> 
+            <div class id="card">
+                 <a href="winter04.webp" data-fancybox="gallery"data-caption="Winter olympics">
+                     <img src="winter04.webp">                            
+                        <p>The Olympic alpine skiing competition features men's, women's, and mixed events.
+                             The men's and women's events each include five events: downhill, slalom, giant slalom, super-G, and combined. The mixed event is a combined competition.</p>
+                </div>
+
+            </section>
+        
+
+        </main>
+        <!--FOOTER -->
+        
+        <footer>
+            <span>&copy; 2026 Winter Olympics — Student Exercise</span>
+            <span>Built with Fancybox v5</span>
+        </footer>
+
+    </div>
+
+<!-- ============================================================
+     FANCYBOX JS — loaded at the bottom of the page
+============================================================ -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script>
+    // Initialise Fancybox on all elements with data-fancybox="gallery"
+    // This single line connects every card image into one gallery
+    Fancybox.bind("[data-fancybox='gallery']", {
+        Thumbs: {
+            type: "classic",        // show thumbnail strip at bottom
+        },
+        Toolbar: {
+            display: {
+                left: [],
+                middle: [],
+                right: ["close"],
+            },
+        },
+    });
+</script>
+
+</body>
+</html>
